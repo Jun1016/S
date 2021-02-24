@@ -1,0 +1,75 @@
+# NAME: 获取签到脚本Cookie
+; Cookie获取成功后关闭本重写订阅
+# AUTHOR: S丶Jun 自用
+# GITHUB: https://github.com/Jun1016/S
+# UPDATED: 2021-02-24 
+
+
+hostname = api.m.jd.com,  c.tieba.baidu.com,  ifac*.iqiyi.com,  as.xiaojukeji.com, common.diditaxi.com.cn,  api.jd.com, newsapi.sina.cn, api.weibo.cn, lite.sina.cn, m.weibo.cn, m.jingxi.com, *.bilibili.com, music.163.com, api.inews.qq.com, m.client.10010.com, wapside.189.cn, wapside.189.cn:9001, alipaymini.189.cn, alipaymini.189.cn:8043, *.video.qq.com, v.qq.com, i.meituan.com, *.xjxjappss.com,*.xjxjapps.com,*.xxjjappss.com,*.xjwdapps.com,*.leleapps.com,*.leyiapps.com,*.hpplay.cn,*.gqbyh.com, dkd-api.dysdk.com, bububao.duoshoutuan.com
+
+#获取京东cookie
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+#百度贴吧获取cookie
+https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+#爱奇艺获取cookie
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+#滴滴出行App
+^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+# 滴滴出行微信小程序
+^https:\/\/common\.diditaxi\.com\.cn\/webapp\/config\/sidebar\? url script-request-header https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+
+# 京喜获取tokens
+^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+ ^https\:\/\/m\.jingxi\.com\/jxcfd\/consume\/CashOut url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+
+#新浪获取cookie
+https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+https:\/\/api\.weibo\.cn\/\d\/users\/show url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+https:\/\/m\.weibo\.cn\/c\/checkin\/ug\/v2\/signin\/module\?module url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+https?:\/\/lite\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center - script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+https?:\/\/lite\.sina\.cn\/\?resource=userpoint\/signIn - script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js
+
+#bilibili获取cookie
+^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+
+#网易云音乐获取cookie
+^https:\/\/music\.163\.com\/m\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js
+
+# 腾讯视频获取cookie
+^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+^https?:\/\/v.qq.com\/x\/bu\/mobile_checkin url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+
+# 美团获取cookie
+^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js
+
+#腾讯新闻获取cookie
+https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? url script-request-body https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js
+
+#联通获取cookie
+^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(integral|doubleball)\/firstpage url script-request-header https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js
+
+#电信获取cookie
+^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
+
+#电信换话费
+^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume url script-request-body https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js
+#整点开宝箱
+https:\/\/alipaymini\.189\.cn:8043\/treasureBox\/queryUserActivityInfo url script-request-body https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dxbox.js
+
+
+#小小影视
+https:\/\/.*\..*\.com\/ucp\/index url script-response-body https://raw.githubusercontent.com/photonmang/quantumultX/master/xxys.cookie.js
+^https:\/\/.*\..*\.com\/ucp\/index url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/xxys.cookie.js
+
+#多看点Cookie
+^http:\/\/dkd-api\.dysdk\.com\/user\/index url script-request-body https://raw.githubusercontent.com/age174/-/main/dkd.js
+#多看点提现Cookie
+ ^http:\/\/dkd-api\.dysdk\.com\/money\/withdraw_do? url script-request-body https://raw.githubusercontent.com/age174/-/main/dkd.js
+
+#步步宝
+https://bububao.duoshoutuan.com/user/profile url script-request-header https://raw.githubusercontent.com/adwktt/adwktt/master/BBB.js
