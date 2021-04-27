@@ -1,6 +1,6 @@
 #中青自动阅读
 
-hostname = ios.baertt.com
+hostname = ios.baertt.com, *.youth.cn
 
 
 https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign) url script-request-header https://gitee.com/Sunert/Scripts/raw/master/Task/Youth_Read.js
