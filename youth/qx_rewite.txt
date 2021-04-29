@@ -3,7 +3,7 @@
 hostname = ios.baertt.com, kd.youth.cn
 
 
-https:\/\/kd\.youth\.cn\/WebApi\/NewTaskIos\/getTaskList url script-request-header https://gitee.com/Sunert/Scripts/raw/master/Task/youth.js
-https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json url script-request-body https://gitee.com/Sunert/Scripts/raw/master/Task/youth.js
-https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body  https://gitee.com/Sunert/Scripts/raw/master/Task/youth.js
-https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json url script-request-body https://gitee.com/Sunert/Scripts/raw/master/Task/youth.js
+https:\/\/kd\.youth\.cn\/WebApi\/NewTaskIos\/getTaskList url script-request-header https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body  https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
+https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json url script-request-body https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js
