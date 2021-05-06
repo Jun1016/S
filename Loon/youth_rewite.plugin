@@ -1,0 +1,8 @@
+#中青看点获取cookie
+
+hostname = ios.baertt.com, kd.youth.cn
+
+https:\/\/kd\.youth\.cn\/WebApi\/NewTaskIos\/getTaskList script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js, requires-body=true, tag=中青看点极速版
+https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js, requires-body=true, tag=中青看点极速版
