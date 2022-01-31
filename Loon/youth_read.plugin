@@ -1,8 +1,9 @@
 
 [Script]
 # 中青看点自动阅读
-http-request https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, requires-body=true, tag=中青看点阅读
-http-request https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, tag=中青看点阅读
+http-request https:\/\/kandian\.wkandian\.com\/v5\/article\/complete\.json script-path= https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, requires-body=true, tag=中青看点阅读
+http-request https:\/\/kandian\.wkandian\.com/v5\/user\/stay\.json script-path= https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, requires-body=true, tag=中青看点阅读
+http-request https:\/\/kandian\.wkandian\.com\/v5\/article\/info\.json script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, requires-body=true, tag=中青看点阅读
 
 [MITM]
-hostname = ios.baertt.com
+hostname = ios.baertt.com,  kandian.wkandian.com
